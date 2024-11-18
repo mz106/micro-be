@@ -1,0 +1,44 @@
+
+
+
+
+
+request 1
+
+GET
+
+url - /users/getallusers
+
+response:
+
+    success:
+        type: object
+        properties:
+            message:
+                type: string
+                example: "success"
+            result:
+                type: array
+                items:
+                    type: object
+
+
+request 2
+
+GET
+
+url - /users/getoneuser
+
+response:
+
+    success:
+        type: object
+        items:
+            message:
+                type: string
+                example: "success"
+            result:
+                type: object
+                properties:
+                    username (string)
+                    email (string)
